@@ -6,25 +6,25 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    title: "Business Intelligence Manager",
+    cardImage: "assets/images/experience-page/AXA.png",
+    place: "AXA XL",
+    time: "(Sep, 2012 - present)",
+    desp: "<li>Leading the Onshore (US) and India team for data to insight strategy. We cater to both Insurance & Reinsurance segment of AXAXL.</li> <li>Responsible for project management activities such as leading data analytics reports deliveries in Qlik View, Qlik Sense, Power BI.</li> <li>Creating complex solutions through queries and procedures in Python, MS SQL Server and Oracle SQL.</li>",
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
+    title: "Senior Analyst",
+    cardImage: "assets/images/experience-page/WNS.png",
+    place: "WNS",
+    time: "(Aug, 2010 - Sep, 2012)",
+    desp: "<li I was responsible for development & maintenance of financial software solutions for clients within the BFSI & Retail space.</li><li>I was providing key analytical insights and providing MS Excel & Business Objects based financial reports.</li>",
   },
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    title: "Benefits Administrator",
+    cardImage: "assets/images/experience-page/Hewitt.png",
+    place: "Hewitt Associates",
+    time: "(Sep, 2008 - Aug, 2010)",
+    desp: "<li> I closely worked with Pension Actuaries to analyze the Defined Benefit plans that were managed by Hewitt.</li><li>Creation of spreadsheets applications in Excel through VBA, MS Access used for advance calculations to calculate retirement Benefits.</li>",
   },
 ];
 
@@ -32,7 +32,7 @@ const showCards2 = () => {
   let output = "";
   exp.forEach(
     ({ title, cardImage, place, time, desp }) =>
-      (output += `        
+    (output += `        
     <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
       <div class="card card1">
         <img src="${cardImage}" class="featured-image"/>
@@ -64,28 +64,28 @@ document.addEventListener("DOMContentLoaded", showCards2);
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
+    title: "Microsoft Certified: Azure AI Fundamentals",
+    cardImage: "assets/images/experience-page/AI.jfif",
     description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+      "Foundational knowledge of machine learning (ML) and artificial intelligence (AI) concepts and related Microsoft Azure services",
   },
   {
-    title: "StudentCode-in 2020",
-    cardImage: "assets/images/experience-page/2.jpg",
+    title: "Microsoft Certified: Azure Data Fundamentals",
+    cardImage: "assets/images/experience-page/Data.jfif",
     description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
+      "Foundational knowledge of core data concepts and how they are implemented using Microsoft Azure data services.",
   },
   {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/3.jpg",
+    title: "Microsoft Certified: Azure Fundamentals",
+    cardImage: "assets/images/experience-page/Azure.png",
     description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
+      "Foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.",
   },
   {
-    title: "Hakin-Codes",
-    cardImage: "assets/images/experience-page/4.jpg",
+    title: "Microsoft Certified: Power Platform Fundamentals",
+    cardImage: "assets/images/experience-page/PP.jpg",
     description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
+      "Improve productivity by automating business processes, analyzing data to produce business insights.",
   },
 ];
 
@@ -93,7 +93,7 @@ const showCards = () => {
   let output = "";
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
-      (output += `        
+    (output += `        
       <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
       
       <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
@@ -115,104 +115,74 @@ document.addEventListener("DOMContentLoaded", showCards);
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
   {
-    title: "The Uplift Project",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/uplift.png",
-    desp: "I would be responsible for guiding 100s of participants across the globe in their first steps towards Applied Data Science and building end-to-end machine learning projects.",
+    title: "Power BI",
+    subtitle: "Data Visualization",
+    image: "assets/images/experience-page/PowerBI.jfif",
+    desp: "Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.",
   },
   {
-    title: "ULHacks",
-    subtitle: "Judge",
+    title: "Qlik Sense",
+    subtitle: "Data Visualization",
     image: "assets/images/experience-page/ulhacks.png",
-    desp: "ULHacks is a 36 hour long hackathon organized with an aim to enable students to create a project which empowers learning.",
+    desp: "Qlik Sense is a complete data analytics platform that sets the benchmark for a new generation of analytics. With its one-of-a-kind associative analytics engine, sophisticated AI, and high performance cloud platform, you can empower everyone in your organization to make better decisions daily and take action creating a truly data-driven enterprise.",
   },
   {
-    title: "WaffleHacks",
-    subtitle: "Judge",
+    title: "Python",
+    subtitle: "Automation, Web Developemnt",
     image: "assets/images/experience-page/wafflehacks.png",
     desp: "WaffleHacks 2021 is an upcoming 48-hour student-organized hackathon with an aim to bring technical solutions to local communities and small businesses.",
   },
   {
-    title: "Elevate Tech",
-    subtitle: "Judge",
+    title: "HTML, CSS",
+    subtitle: "Web Developemn",
     image: "assets/images/experience-page/elevate.png",
-    desp: "Elevate Hacks is an upcoming all-female virtual hackathon coming from AUGUST 14th to 15th.",
+    desp: "HTML and CSS are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices.",
   },
   {
-    title: "PitchTeen",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/pitchteen.png",
-    desp: "PitchTeen 2.0 was a tech startup competition for female and non-binary communities in high school and college from all over the world with an aim to create a safe and encouraging place for women to help them explore tech and business fields.",
+    title: "Excel VBA",
+    subtitle: "Automation, Financial Reporting",
+    image: "assets/images/experience-page/VBA.jfif",
+    desp: "Visual Basic for Applications is an implementation of Microsoft's event-driven programming language Visual Basic 6, which was declared legacy in 2008, and is an associated integrated development environment.",
   },
   {
-    title: "Hack-A-Solution",
-    subtitle: "Judge",
+    title: "SQL Server",
+    subtitle: "Databases",
     image: "assets/images/experience-page/hackasolution.png",
-    desp: "Hack-a-Solution 2021 is a 24 hour long hackathon organized by Frisco students to raise awareness of world issues through technology.",
+    desp: "Microsoft SQL Server is a relational database management system developed by Microsoft. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications—which may run either on the same computer or on another computer across a network.",
   },
   {
-    title: "UniGlobe Hacks",
-    subtitle: "Judge",
+    title: "MS Access",
+    subtitle: "Databases, Automation",
     image: "assets/images/experience-page/uniglobe.png",
-    desp: "UniGlobe Hacks 2.0 is an upcoming 4-day long hackathon run by high school students held during 28-31 July 2021.",
+    desp: "Microsoft Access is a database management system from Microsoft that combines the relational Microsoft Jet Database Engine with a graphical user interface and software-development tools. It is a member of the Microsoft 365 suite of applications, included in the Professional and higher editions or sold separately.",
   },
   {
-    title: "AtlasHacks",
-    subtitle: "Mentor",
+    title: "Power Apps",
+    subtitle: "App Development",
     image: "assets/images/experience-page/atlas.png",
     desp: "AtlasHacks II is a 3-day virtual hackathon that aims to foster creativity within hackers all around the world.",
   },
   {
-    title: "NeoHacks",
-    subtitle: "Judge",
+    title: "Power Automate",
+    subtitle: "Automation",
     image: "assets/images/experience-page/neo.png",
     desp: "NeoHacks is an upcoming 48-hour hackathon taking place July 23-25, 2021 where hundreds of students from around the world will come together virtually to learn new skills, meet new friends, and build awesome projects. We provide beginner-friendly workshops, mentorship, fun games, and more.",
   },
   {
-    title: "Mission Inspired",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/mission.png",
-    desp: "InspireEd Hacks is a nationwide initiative organized by the student-for-student nonprofit, Mission InspirEd, challenging students ages 10-18 to synthesize their creativity and coding experience into a product beneficial to the educational community.",
-  },
-  {
-    title: "Hack3",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/hack3.png",
-    desp: "Hack3 2021 is an upcoming global online hackathon that aims to enable high school students to learn computer science, with a broader message of (everyone can code) targeting underrepresented demographics to improve diversity and inclusion of individuals in the computer technology space.",
-  },
-  {
-    title: "JITHack",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/jithack.png",
-    desp: "JITHack is an upcoming virtual design and development hackathon organized by the students of Jyothy Institute of Technology, Bengaluru on June 26, 2021, where participants have 24 hours to build something incredible.",
-  },
-  {
-    title: "Recess Hacks",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/recess.png",
-    desp: "Recess Hacks is an upcoming hackathon for high school students in the Greater Toronto Area that strives to encourage innovation among high school students and get involved in technology.",
-  },
-  {
-    title: "Citro Tech",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/citro.png",
-    desp: "Citro Hacks 2021 is an upcoming all-inclusive online hackathon organized by Citro Tech, a student led organization dedicated to empowering minorities in the tech field</li>",
-  },
-  {
-    title: "NHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/nhacks.png",
-    desp: "NHacks VI was a hackathon that aimed to encourage students everywhere to develop skills in computer science by creating tangible products that they're proud of. It initially started as Michigan's largest high school hackathon.",
+    title: "PMicrosoft Azure",
+    subtitle: "Cloud Computing",
+    image: "assets/images/experience-page/neo.png",
+    desp: "NeoHacks is an upcoming 48-hour hackathon taking place July 23-25, 2021 where hundreds of students from around the world will come together virtually to learn new skills, meet new friends, and build awesome projects. We provide beginner-friendly workshops, mentorship, fun games, and more.",
   }
-  
+
 
 ];
 
 const showCards3 = () => {
   let output = "";
   mentor.forEach(
-    ({ title, image, subtitle, desp}) =>
-      (output += `  
+    ({ title, image, subtitle, desp }) =>
+    (output += `  
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
             <img src="${image}" alt="">
