@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 // Header
 
@@ -99,7 +99,7 @@ let header = $(`
         </div>
       </ul>
     </div>
-  </nav>`);
+  </nav>`)
 
 // Footer
 
@@ -111,7 +111,7 @@ let footer = $(`
       <!--SVG code for quote-left icon-->
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.5em" height="1.5em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7 21a4 4 0 0 1-4-4c0-1.473 1.333-6.14 4-14h2L7 13a4 4 0 1 1 0 8zm10 0a4 4 0 0 1-4-4c0-1.473 1.333-6.14 4-14h2l-2 10a4 4 0 1 1 0 8z" fill="#fff" fill-rule="evenodd"/></svg>
       </div>
-      <p class="tag" >Develop a passion for learning. If you do, you will never cease to grow.</p>
+      <p class="tag" >Develop a passion for learning. If you do, you will never cease to grow. Learning should never be stopped. This way you can upskill yourself which will ultimately help you to grow in your career. This Porfolio is to showcase our expertise in different fields. We have done a number of projects for our clients from all over the world. The major fields of our projects are website development, power bi projects, microsoft excel automation, and qliksense projects.</p>
     </div>
 
     
@@ -247,180 +247,180 @@ let footer = $(`
     </div>
     </div>
 </footer>
-`);
+`)
 
 //"Scroll to top" button
 let upArrow = $(`
   <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   })
-`);
+`)
 
 $(document).ready(function () {
   // updating the color of the swiper bullets (initial update of color)
-  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
+  updateColorOfSwiperBullets(localStorage.getItem('lightMode'))
 
   //function for the "Scroll To Top" button to detect the footer
   $(window).scroll(function () {
     //The button will be hidden until we scroll more than the window's height
     if ($(window).scrollTop() < $(window).height()) {
-      $("#btnScrollToTop").css("visibility", "hidden");
+      $('#btnScrollToTop').css('visibility', 'hidden')
     } else {
-      $("#btnScrollToTop").css("visibility", "visible");
+      $('#btnScrollToTop').css('visibility', 'visible')
       //The button will change it's color when it hits the footer
       if (
         $(window).scrollTop() + $(window).height() >
         $(document).height() - 838
       ) {
         // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
-        $("#btnScrollToTop").css("background-color", "#6a00bb");
+        $('#btnScrollToTop').css('background-color', '#6a00bb')
       } else {
-        $("#btnScrollToTop").css("background-color", "#6a00bb");
+        $('#btnScrollToTop').css('background-color', '#6a00bb')
       }
     }
-  });
-});
+  })
+})
 
 //function to scroll to top
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: "smooth",
-  });
-};
+    behavior: 'smooth',
+  })
+}
 
 // Window Loads
 $(function () {
-  let bodyElement = $(`body`);
-  bodyElement.prepend(header);
-  bodyElement.append(footer);
-  bodyElement.append(upArrow);
-  $("#btnScrollToTop").css("visibility", "hidden");
+  let bodyElement = $(`body`)
+  bodyElement.prepend(header)
+  bodyElement.append(footer)
+  bodyElement.append(upArrow)
+  $('#btnScrollToTop').css('visibility', 'hidden')
 
   //toggler hamburger functions
-  const menuBtn = document.querySelector(".navbar-toggler");
-  let menuOpen = false;
-  menuBtn.addEventListener("click", () => {
+  const menuBtn = document.querySelector('.navbar-toggler')
+  let menuOpen = false
+  menuBtn.addEventListener('click', () => {
     if (!menuOpen) {
-      menuBtn.classList.add("open");
-      menuOpen = true;
+      menuBtn.classList.add('open')
+      menuOpen = true
     } else {
-      menuBtn.classList.remove("open");
-      menuOpen = false;
+      menuBtn.classList.remove('open')
+      menuOpen = false
     }
-  });
-});
+  })
+})
 
 // function for toggling hamburger is-active class
 
 $(function () {
-  $("#js-hamburger").on("click", function () {
-    $(this).toggleClass("is-active");
-  });
-});
+  $('#js-hamburger').on('click', function () {
+    $(this).toggleClass('is-active')
+  })
+})
 
 // Navbar current page highlight
 
-let loader = document.querySelector(".loader-container");
+let loader = document.querySelector('.loader-container')
 
-window.addEventListener("load", vanish);
+window.addEventListener('load', vanish)
 
 function vanish() {
-  loader.classList.add("disappear");
+  loader.classList.add('disappear')
 }
 $(function () {
-  $("a.nav-link").each(function () {
-    if ($(this).prop("href") == window.location.href) {
-      $(this).addClass("current-link");
+  $('a.nav-link').each(function () {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current-link')
     }
-  });
-});
+  })
+})
 
 //function to remove underline on hover
 
 $(document).ready(function () {
-  $("a.nav-link").hover(
+  $('a.nav-link').hover(
     function () {
-      $(this).removeClass("current-link");
+      $(this).removeClass('current-link')
     },
     function () {
-      if ($(this).prop("href") == window.location.href) {
-        $(this).addClass("current-link");
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current-link')
       }
     }
-  );
-});
+  )
+})
 
 //consistent dark mode for page change
-if (localStorage.getItem("lightMode") == "dark") {
-  var app = document.getElementsByTagName("HTML")[0];
-  app.setAttribute("light-mode", "dark");
+if (localStorage.getItem('lightMode') == 'dark') {
+  var app = document.getElementsByTagName('HTML')[0]
+  app.setAttribute('light-mode', 'dark')
 
   //to add dark theme to nav bar after its been loaded
-  window.addEventListener("load", function () {
-    var nav = document.getElementById("navbar");
-    nav.classList.add("dark-theme");
-    document.getElementById("dark_toggler").checked = true;
-  });
+  window.addEventListener('load', function () {
+    var nav = document.getElementById('navbar')
+    nav.classList.add('dark-theme')
+    document.getElementById('dark_toggler').checked = true
+  })
 
-  var sc = document.getElementsByClassName("socialicon");
+  var sc = document.getElementsByClassName('socialicon')
   for (var i = 0; i < sc.length; i++) {
-    sc[i].classList.add("dsc");
+    sc[i].classList.add('dsc')
   }
 } else {
-  localStorage.setItem("lightMode", "light");
+  localStorage.setItem('lightMode', 'light')
 }
 
 function toggle_light_mode() {
-  console.log(localStorage.getItem("lightMode"));
-  var app = document.getElementsByTagName("HTML")[0];
-  var nav = document.getElementById("navbar");
-  if (localStorage.lightMode == "dark") {
-    localStorage.lightMode = "light";
-    app.setAttribute("light-mode", "light");
-    nav.classList.remove("dark-theme");
-    var sc = document.getElementsByClassName("socialicon");
+  console.log(localStorage.getItem('lightMode'))
+  var app = document.getElementsByTagName('HTML')[0]
+  var nav = document.getElementById('navbar')
+  if (localStorage.lightMode == 'dark') {
+    localStorage.lightMode = 'light'
+    app.setAttribute('light-mode', 'light')
+    nav.classList.remove('dark-theme')
+    var sc = document.getElementsByClassName('socialicon')
     for (var i = 0; i < sc.length; i++) {
-      sc[i].classList.remove("dsc");
+      sc[i].classList.remove('dsc')
     }
   } else {
-    nav.classList.add("dark-theme");
-    localStorage.lightMode = "dark";
-    app.setAttribute("light-mode", "dark");
-    var sc = document.getElementsByClassName("socialicon");
+    nav.classList.add('dark-theme')
+    localStorage.lightMode = 'dark'
+    app.setAttribute('light-mode', 'dark')
+    var sc = document.getElementsByClassName('socialicon')
     for (var i = 0; i < sc.length; i++) {
-      sc[i].classList.add("dsc");
+      sc[i].classList.add('dsc')
     }
   }
 
   // updating the swiper bullets
-  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
+  updateColorOfSwiperBullets(localStorage.getItem('lightMode'))
 }
 
 // function to update swiper bullets
 function updateColorOfSwiperBullets(lightMode) {
-  document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
-    if (lightMode == "light") {
-      bullet.style.backgroundColor = "blue";
+  document.querySelectorAll('.swiper-pagination-bullet').forEach((bullet) => {
+    if (lightMode == 'light') {
+      bullet.style.backgroundColor = 'blue'
     } else {
-      bullet.style.backgroundColor = "white";
+      bullet.style.backgroundColor = 'white'
     }
-  });
+  })
 }
 
-window.addEventListener("storage", function () {
-  if (localStorage.lightMode == "dark") {
-    app.setAttribute("light-mode", "dark");
+window.addEventListener('storage', function () {
+  if (localStorage.lightMode == 'dark') {
+    app.setAttribute('light-mode', 'dark')
   } else {
-    app.setAttribute("light-mode", "light");
+    app.setAttribute('light-mode', 'light')
   }
-});
+})
 
 // Function to remove scroll bar during preload
-$(window).on("load", function () {
+$(window).on('load', function () {
   setTimeout(function () {
-    $(".no-scroll-preload").css("overflow", "visible");
-  }, 1000);
-  $(".loader-container").fadeOut(2500);
-});
+    $('.no-scroll-preload').css('overflow', 'visible')
+  }, 1000)
+  $('.loader-container').fadeOut(2500)
+})
